@@ -1,0 +1,75 @@
+.trainers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.card.trainer {
+  padding: 1rem;
+}
+
+.trainer__img {
+  border-radius: 0 2rem;
+  -webkit-border-radius: 0 2rem;
+  -moz-border-radius: 0 2rem;
+  -ms-border-radius: 0 2rem;
+  -o-border-radius: 0 2rem;
+  overflow: hidden;
+}
+
+.trainer p {
+  margin-top: 0.5rem;
+}
+
+.trainer h3 {
+  margin-top: 2rem;
+}
+
+.trainer__socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.trainer__socials a {
+  font-size: 0.7rem;
+  background: var(--color-gray-600);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.trainer:hover a {
+  background: var(--color-gray-500);
+}
+
+/* MEDIUM SCREEN */
+@media screen and (max-width: 1024px) {
+  .trainer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 600px) {
+  .trainer__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card.trainer {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
