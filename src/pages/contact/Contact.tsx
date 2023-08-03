@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import HeaderImage from "../../images/header_bg_2.jpg";
 import { FaWhatsapp, FaFacebookMessenger, FaEnvelope } from "react-icons/fa6";
-import "./Contact.css";
+import "./contact.css";
 
 function Contact() {
   return (
