@@ -3,7 +3,7 @@ function Card({
   children,
 }: {
   className?: string;
-  children: string;
+  children: JSX.Element | JSX.Element[];
 }) {
   return <article className={`card ${className}`}>{children}</article>;
 }

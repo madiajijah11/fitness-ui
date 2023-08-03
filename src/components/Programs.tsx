@@ -8,7 +8,7 @@ function Programs() {
   return (
     <section className="programs">
       <div className="container programs__container">
-        <SectionHead icon={<FaCrown />} title="Programs" className={true} />
+        <SectionHead icon={<FaCrown />} title="Programs" className="" />
         <div className="programs__wrapper">
           {programs.map(({ id, icon, title, info, path }) => {
             return (
