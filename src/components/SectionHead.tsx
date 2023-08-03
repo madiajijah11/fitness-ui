@@ -1,9 +1,11 @@
+import React from "react";
+
 function SectionHead({
   icon,
   title,
   className = "",
 }: {
-  icon: JSX.Element;
+  icon: React.JSX.Element;
   title: string;
   className?: string;
 }) {

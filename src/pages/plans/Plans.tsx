@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Card from "../../UI/Card";
 import HeaderImage from "../../images/header_bg_4.jpg";
 import "./plans.css";
+import React from "react";
 
 function Plans() {
   return (
@@ -23,13 +24,11 @@ function Plans() {
                 <h1>{`$${price}`}</h1>
                 <h2>/mo</h2>
                 <h4>Features</h4>
-                {features.map(({ feature, available }, index) => {
-                  return (
-                    <p key={index} className={!available ? "disabled" : ""}>
-                      {feature}
-                    </p>
-                  );
-                })}
+                {features.map(({ feature, available }, index) => (
+                  <p key={index} className={!available ? "disabled" : ""}>
+                    {feature}
+                  </p>
+                ))}
                 <button className="btn lg">Choose Plan</button>
               </Card>
             );

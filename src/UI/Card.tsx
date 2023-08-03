@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 function Card({
   className = "",
   children,
 }: {
   className?: string;
-  children: JSX.Element | JSX.Element[];
+  children: ReactNode;
 }) {
   return <article className={`card ${className}`}>{children}</article>;
 }

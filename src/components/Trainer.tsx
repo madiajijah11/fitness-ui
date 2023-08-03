@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "../UI/Card";
 
 function Trainer({
@@ -9,7 +10,7 @@ function Trainer({
   image: string;
   name: string;
   job: string;
-  socials: { icon: JSX.Element; link: string }[];
+  socials: { icon: React.JSX.Element; link: string }[];
 }) {
   return (
     <Card className="trainer">

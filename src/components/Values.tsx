@@ -12,7 +12,7 @@ function Values() {
           <img src={Image} alt="Values Image" className="values__image" />
         </div>
         <div className="values__right">
-          <SectionHead icon={<FaDiamond />} title="Values" className={true} />
+          <SectionHead icon={<FaDiamond />} title="Values" className="" />
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             vitae aut repudiandae consectetur, aliquid velit ipsa eligendi fuga
