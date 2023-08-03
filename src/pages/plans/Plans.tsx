@@ -3,7 +3,6 @@ import Header from "../../components/Header";
 import Card from "../../UI/Card";
 import HeaderImage from "../../images/header_bg_4.jpg";
 import "./plans.css";
-import React from "react";
 
 function Plans() {
   return (
